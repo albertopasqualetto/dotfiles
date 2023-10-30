@@ -1,3 +1,5 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 format = """
 [](#9A348E)\
 $os\
@@ -44,7 +46,7 @@ disabled = false
 [os]
 style = "bg:#9A348E"
 disabled = false # Disabled by default
-# format = "$symbol "
+format = '[$symbol ]($style)'
 symbols.Windows = ""
 symbols.Ubuntu = ""
 
