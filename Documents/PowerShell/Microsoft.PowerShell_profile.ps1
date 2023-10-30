@@ -19,7 +19,7 @@ function grep {
 	Select-String $args
 }
 function which {
-	where $args
+	where [String]$args
 }
 
 
