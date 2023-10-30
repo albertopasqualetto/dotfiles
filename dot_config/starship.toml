@@ -2,6 +2,8 @@
 
 format = """
 [](#9A348E)\
+$hostname\
+$localip\
 $os\
 $username\
 [](bg:#DA627D fg:#9A348E)\
@@ -40,6 +42,19 @@ style_user = "bg:#9A348E"
 style_root = "bg:#9A348E"
 format = '[$user ]($style)'
 disabled = false
+
+[hostname]
+ssh_only = true
+style = "bg:#9A348E"
+format = '[$ssh_symbol]($style)'
+# format = '[$ssh_symbol on $hostname ]($style)'
+disabled = false
+
+[localip]
+ssh_only = true
+style = "bg:#9A348E"
+format = '@[$localipv4]($style) '
+disabled = true
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
