@@ -1,0 +1,4 @@
+Host OracleCloud_VM
+  HostName 129.152.19.184
+  User ubuntu
+  IdentityFile C:/Users/alber/.ssh/oraclecloud_VM1.key
